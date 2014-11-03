@@ -1,0 +1,26 @@
+{
+  "name": "Portfolio-API",
+  "version": "0.1.0",
+  "description": "My portfolio API.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AaronChuo/Portfolio-API.git"
+  },
+  "keywords": [
+    "AaronChuo",
+    "Portfolio",
+    "Resume",
+    "Profile",
+    "Work"
+  ],
+  "author": "AaronChuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AaronChuo/Portfolio-API/issues"
+  },
+  "homepage": "https://github.com/AaronChuo/Portfolio-API"
+}
