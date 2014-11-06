@@ -2,9 +2,9 @@
   "name": "Portfolio-API",
   "version": "0.1.0",
   "description": "My portfolio API.",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "test": "mocha test/*.js"
+    "start": "node server.js --websocket-port=$OPENSHIFT_NODEJS_PORT --log-level=1"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,12 @@
     "Profile",
     "Work"
   ],
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "express": "~4.0.0",
+    "mongoose": "~3.6.13",
+    "node-dev": "^2.6.0"
+  },
   "author": "AaronChuo",
   "license": "MIT",
   "bugs": {
