@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser());
 
 var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+//var port = process.env.port || 8080;
 
 //mongoose.connect('mongodb://localhost:27017/portfolio'); //Dev
 mongoose.connect('mongodb://127.10.235.2:27017/portfolio');
