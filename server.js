@@ -3,17 +3,17 @@
 *************************************************************************/
 var express    = require('express');
 var app        = express();
-var bodyParser = require('body-parser');
+//var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 // var Profile = require('./app/models/profile');
 // var Exp = require('./app/models/exp');
 // var Work = require('./app/models/work');
 
 //app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser());
+//app.use(bodyParser());
 
 //var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var port = process.env.port || 8080;
+var port = 8080;
 
 //mongoose.connect('mongodb://localhost:27017/portfolio'); //Dev
 var dbUser = 'aaronchuo';
