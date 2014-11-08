@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio-API",
+  "name": "portfolio-api",
   "version": "0.1.0",
   "description": "My portfolio API.",
   "main": "server.js",
