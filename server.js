@@ -62,7 +62,7 @@ mongoose.connect('mongodb://dbUser:dbPwd@ds051640.mongolab.com:51640/heroku_app3
 *************************************************************************/
 router.get('/', function(req, res) {
   res.json({
-    message: 'Hello !';
+    message: 'Hello !'
   });
 });
 
