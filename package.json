@@ -7,9 +7,6 @@
     "type": "git",
     "url": "git@github.com:AaronChuo/Portfolio-API.git"
   },
-  "scripts": {
-    "start": "node server.js --websocket-port=$OPENSHIFT_NODEJS_PORT --log-level=1"
-  },
   "keywords": [
     "AaronChuo",
     "Portfolio",
