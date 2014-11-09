@@ -20,7 +20,7 @@ var dbUser = 'aaronchuo';
 var dbPwd = 'yesyes1008';
 mongoose.connect('mongodb://dbUser:dbPwd@ds051640.mongolab.com:51640/heroku_app31347655');
 
-//var router = express.Router();
+var router = express.Router();
 // var dbQuery = {
 
 //   //getter: get all / specific data
