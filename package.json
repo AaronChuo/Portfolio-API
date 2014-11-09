@@ -2,26 +2,5 @@
   "name": "portfolio-api",
   "version": "0.1.0",
   "description": "My portfolio API.",
-  "main": "server.js",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:AaronChuo/Portfolio-API.git"
-  },
-  "keywords": [
-    "AaronChuo",
-    "Portfolio",
-    "Resume",
-    "Profile",
-    "Work"
-  ],
-  "dependencies": {
-    "body-parser": "~1.0.1",
-    "express": "~4.0.0",
-    "mongoose": "~3.6.13"
-  },
-  "author": "AaronChuo",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AaronChuo/Portfolio-API/issues"
-  }
+  "main": "server.js"
 }
