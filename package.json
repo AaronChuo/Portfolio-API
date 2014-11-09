@@ -2,7 +2,7 @@
   "name": "portfolio-api",
   "version": "0.1.0",
   "description": "My portfolio API.",
-  "main": "server.js",
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:AaronChuo/Portfolio-API.git"
