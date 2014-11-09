@@ -1,10 +1,10 @@
 /*************************************************************************
   Portfolio RESTful API
 *************************************************************************/
-var express    = require('express');
-var app        = express();
+//var express    = require('express');
+//var app        = express();
 //var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 // var Profile = require('./app/models/profile');
 // var Exp = require('./app/models/exp');
 // var Work = require('./app/models/work');
@@ -18,9 +18,9 @@ var port = 8080;
 //mongoose.connect('mongodb://localhost:27017/portfolio'); //Dev
 var dbUser = 'aaronchuo';
 var dbPwd = 'yesyes1008';
-mongoose.connect('mongodb://dbUser:dbPwd@ds051640.mongolab.com:51640/heroku_app31347655');
+//mongoose.connect('mongodb://dbUser:dbPwd@ds051640.mongolab.com:51640/heroku_app31347655');
 
-var router = express.Router();
+//var router = express.Router();
 // var dbQuery = {
 
 //   //getter: get all / specific data
@@ -60,13 +60,13 @@ var router = express.Router();
 /*************************************************************************
   API Index
 *************************************************************************/
-router.get('/', function(req, res) {
-  res.json({
-    message: 'Hello !'
-  });
-});
+// router.get('/', function(req, res) {
+//   res.json({
+//     message: 'Hello !'
+//   });
+// });
 
-app.use('/api', router);
+//app.use('/api', router);
 
-app.listen(port);
+//app.listen(port);
 console.log(port + ' port is running!');
