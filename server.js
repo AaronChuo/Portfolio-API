@@ -17,7 +17,7 @@ app.set('port', port);
 var mongoose = require('mongoose');
 var dbUser = 'aaronchuo';
 var dbPwd = 'yesyes1008';
-mongoose.connect('mongodb://' + dbUser + ':' + dbPwd + '@ds051640.mongolab.com:51640/heroku_app31347655');
+mongoose.connect('mongodb://' + dbUser + ':' + dbPwd + '@ds053160.mongolab.com:53160/heroku_app31461352');
 
 var router = express.Router();
 // var dbQuery = {
