@@ -15,52 +15,23 @@ var port = process.env.PORT || 8080;
 //app.set('port', port);
 
 var mongoose = require('mongoose');
-var dbUser = 'aaronchuo';
-var dbPwd = 'yesyes1008';
-mongoose.connect('mongodb://' + dbUser + ':' + dbPwd + '@ds053160.mongolab.com:53160/heroku_app31461352');
+var dbUser = '';
+var dbPwd = '';
+mongoose.connect();
 
 var router = express.Router();
-// var dbQuery = {
-
-//   //getter: get all / specific data
-//   get: function(dbInstance, id) {
-//     var callback = function(err, data) {
-//       var returnValue = {};
-//       if(err) {
-//         returnValue.status = 'error';
-//         returnValue.message = err;
-//       } else {
-//         returnValue.status = 'success';
-//         returnValue.message = data;
-//       }
-//       return returnValue;
-//     };
-
-//     if(id) {
-//       dbName.findById(id, function(err, data) {
-//         res.jcallback(err, data);
-//       });
-//     } else {
-//       dbName.find(function(err, data) {
-//         if(err) res.send(err);
-//         res.json(data);
-//       });
-//     }
-//   },
-
-//   //setter: create / update / delete
-//   set: function(id) {
-
-//   }
-// };
-
+var auth = require('basic-auth');
 /*************************************************************************
   API Authentication
 *************************************************************************/
 router.use(function(req, res, next) {
-  //TODO: HTTP BA
-  console.log('Test breakpoint.')
-  next();
+  var user = auth(req);
+  if(user === 'undefined' || user['name'] !== dbUser || user['pass'] !== dbPass) {
+    res.statusCode = 401;
+    res.send("Unauthorized");
+  } else {
+    next();
+  }
 });
 
 /*************************************************************************
