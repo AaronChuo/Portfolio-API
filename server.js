@@ -8,7 +8,7 @@ var Profile = require('./app/models/profile');
 var Exp = require('./app/models/exp');
 var Work = require('./app/models/work');
 
-//app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser());
 
 var port = process.env.PORT || 8080;
@@ -85,13 +85,10 @@ router.route('/profile')
   // Get all profile fields
   // GET http://portfolio-aaronchuo.rhcloud.com/api/profile
   .get(function(req, res) {
-    res.json({
-      message: 'here is profile'
+    Profile.find(function(err, profiles) {
+      if(err) res.send(err);
+      res.json(profiles);
     });
-    // Profile.find(function(err, profiles) {
-    //   if(err) res.send(err);
-    //   res.json(profiles);
-    // });
   });
 
 router.route('/profile/:profile_id')
