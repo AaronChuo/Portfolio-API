@@ -15,7 +15,9 @@ Uri: /profile
 
 CRUD (GET, POST, PUT, DELETE)
 - Get all profiles.
-    HTTP GET /profile
+    
+        HTTP GET /profile
+
 - Get a specify profile.
     HTTP GET /profile/:profile_id
 - Add a new profile.
