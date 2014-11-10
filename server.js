@@ -17,6 +17,8 @@ var mongoose = require('mongoose');
 var auth = require('./app/_data/db');
 mongoose.connect('mongodb://' + auth.dbUser + ':' + auth.dbPwd + '@' + auth.url);
 
+console.log(auth.dbUser);
+
 var router = express.Router();
 var auth = require('basic-auth');
 /*************************************************************************
