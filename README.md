@@ -16,18 +16,23 @@ Uri: /profile
 CRUD (GET, POST, PUT, DELETE)
 - Get all profiles.
     
-        HTTP GET /profile
+    ```HTTP GET /profile```
 
 - Get a specify profile.
 
     ```HTTP GET /profile/:profile_id```
     
 - Add a new profile.
-    HTTP POST /profile
+
+    ```HTTP POST /profile```
+    
 - Update a specify profile.
-    HTTP PUT /profile/:profile_id
+    
+    ```HTTP PUT /profile/:profile_id```
+
 - Delete a specify profile.
-    HTTP DELETE /profile/:profile_id
+
+    ```HTTP DELETE /profile/:profile_id```
 
 ## Experience API
 
@@ -39,15 +44,24 @@ Uri: /exp
 
 CRUD (GET, POST, PUT, DELETE)
 - Get all experiences.
-    HTTP GET /exp
+    
+    ```HTTP GET /exp```
+
 - Get a specify experience.
-    HTTP GET /exp/:exp_id
+
+    ```HTTP GET /exp/:exp_id```
+    
 - Add a new experience.
-    HTTP POST /exp
+    
+    ```HTTP POST /exp```
+
 - Update a specify experience.
-    HTTP PUT /exp/:exp_id
+    
+    ```HTTP PUT /exp/:exp_id```
+
 - Delete a specify experience.
-    HTTP DELETE /exp/:exp_id
+
+    ```HTTP DELETE /exp/:exp_id```
 
 ## Work API
 
@@ -60,23 +74,23 @@ Uri: /work
 CRUD (GET, POST, PUT, DELETE)
 - Get all works.
 
-    HTTP GET /work
+    ```HTTP GET /work```
 
 - Get a specify work.
 
-    HTTP GET /work/:work_id
+    ```HTTP GET /work/:work_id```
     
 - Add a new work.
 
-    HTTP POST /work
+    ```HTTP POST /work```
 
 - Update a specify work.
 
-    HTTP PUT /work/:work_id
+    ```HTTP PUT /work/:work_id```
 
 - Delete a specify work.
 
-    HTTP DELETE /work/:work_id
+    ```HTTP DELETE /work/:work_id```
 
 ---
-Owner: Aaron Cho
+Owner: Aaron Chuo ([crazychuo@gmail.com][mailto:crazychuo@gmail.com])
