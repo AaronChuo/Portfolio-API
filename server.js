@@ -12,12 +12,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser());
 
 var port = process.env.PORT || 8080;
-//app.set('port', port);
 
 var mongoose = require('mongoose');
-var dbUser = 'aaronchuo';
-var dbPwd = 'Aar0nChu01oo8';
-mongoose.connect('mongodb://' + dbUser + ':' + dbPwd + '@ds053160.mongolab.com:53160/heroku_app31461352');
+var auth = require('./app/_data/db');
+mongoose.connect('mongodb://' + auth.dbUser + ':' + auth.dbPwd + '@' + auth.url);
 
 var router = express.Router();
 var auth = require('basic-auth');
