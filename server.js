@@ -1,8 +1,8 @@
 /*************************************************************************
   Portfolio RESTful API
 *************************************************************************/
-var express    = require('express');
-var app        = express();
+var express = require('express');
+var app = express();
 //var bodyParser = require('body-parser');
 //var mongoose = require('mongoose');
 // var Profile = require('./app/models/profile');
@@ -13,7 +13,8 @@ var app        = express();
 //app.use(bodyParser());
 
 //var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
+app.set('port', port);
 
 //mongoose.connect('mongodb://localhost:27017/portfolio'); //Dev
 var dbUser = 'aaronchuo';
@@ -66,7 +67,12 @@ var dbPwd = 'yesyes1008';
 //   });
 // });
 
-//app.use('/api', router);
+app.get('/', function(req, res) {
+  res.send('hello world!');
+});
 
-app.listen(port);
-console.log(port + ' port is running!');
+app.listen(app.get('port'), function() {
+  console.log(port + ' port is running!');
+});
+
+//app.use('/api', router);
