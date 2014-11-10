@@ -19,7 +19,9 @@ CRUD (GET, POST, PUT, DELETE)
         HTTP GET /profile
 
 - Get a specify profile.
-    HTTP GET /profile/:profile_id
+
+    ```HTTP GET /profile/:profile_id```
+    
 - Add a new profile.
     HTTP POST /profile
 - Update a specify profile.
