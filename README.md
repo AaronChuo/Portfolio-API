@@ -55,14 +55,23 @@ Uri: /work
 
 CRUD (GET, POST, PUT, DELETE)
 - Get all works.
+
     HTTP GET /work
+
 - Get a specify work.
+
     HTTP GET /work/:work_id
+    
 - Add a new work.
+
     HTTP POST /work
+
 - Update a specify work.
+
     HTTP PUT /work/:work_id
+
 - Delete a specify work.
+
     HTTP DELETE /work/:work_id
 
 ---
