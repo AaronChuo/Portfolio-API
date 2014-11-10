@@ -32,7 +32,7 @@ router.use(function(req, res, next) {
   } else {
     next();
   }
-}.bind(auth));
+}).bind(auth);
 
 /*************************************************************************
   Profile API
