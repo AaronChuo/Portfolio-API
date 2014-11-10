@@ -14,12 +14,8 @@ app.use(bodyParser());
 var port = process.env.PORT || 8080;
 
 var mongoose = require('mongoose');
-var auth = {
-  dbUser: 'aaronchuo',
-  dbPwd: '161764',
-  url: 'ds053160.mongolab.com:53160/heroku_app31461352'
-}
-mongoose.connect('mongodb://' + auth.dbUser + ':' + auth.dbPwd + '@' + auth.url);
+var access = require('./app/_data/db');
+mongoose.connect('mongodb://' + access.dbUser + ':' + access.dbPwd + '@' + access.url);
 
 var router = express.Router();
 var auth = require('basic-auth');
@@ -30,7 +26,7 @@ router.use(function(req, res, next) {
   var user = auth(req);
   console.log(this.dbUser);
   console.log(auth.dbUser);
-  if(user === 'undefined' || user['name'] !== auth.dbUser || user['pass'] !== auth.dbPwd) {
+  if(user === 'undefined' || user['name'] !== access.dbUser || user['pass'] !== access.dbPwd) {
     res.statusCode = 401;
     res.send("Unauthorized");
   } else {
