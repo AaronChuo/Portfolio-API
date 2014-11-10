@@ -26,13 +26,13 @@ var auth = require('basic-auth');
 *************************************************************************/
 router.use(function(req, res, next) {
   var user = auth(req);
-  if(user === 'undefined' || user['name'] !== auth.dbUser || user['pass'] !== auth.dbPwd) {
+  if(user === 'undefined' || user['name'] !== this.dbUser || user['pass'] !== this.dbPwd) {
     res.statusCode = 401;
     res.send("Unauthorized");
   } else {
     next();
   }
-});
+}.bind(auth));
 
 /*************************************************************************
   Profile API
