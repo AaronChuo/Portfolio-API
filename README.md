@@ -93,4 +93,4 @@ CRUD (GET, POST, PUT, DELETE)
     ```HTTP DELETE /work/:work_id```
 
 ---
-Owner: Aaron Chuo ([crazychuo@gmail.com][mailto:crazychuo@gmail.com])
+Owner: Aaron Chuo ([crazychuo@gmail.com](mailto:crazychuo@gmail.com))
