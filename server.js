@@ -4,9 +4,9 @@
 var express = require('express');
 var app = express();
 //var bodyParser = require('body-parser');
-// var Profile = require('./app/models/profile');
-// var Exp = require('./app/models/exp');
-// var Work = require('./app/models/work');
+var Profile = require('./app/models/profile');
+var Exp = require('./app/models/exp');
+var Work = require('./app/models/work');
 
 //app.use(bodyParser.urlencoded({extended: true}));
 //app.use(bodyParser());
