@@ -24,7 +24,7 @@ var auth = require('basic-auth');
 *************************************************************************/
 router.use(function(req, res, next) {
   var user = auth(req);
-  if(user === 'undefined' || user['name'] !== dbUser || user['pass'] !== dbPwd) {
+  if(user === 'undefined' || user['name'] !== auth.dbUser || user['pass'] !== auth.dbPwd) {
     res.statusCode = 401;
     res.send("Unauthorized");
   } else {
