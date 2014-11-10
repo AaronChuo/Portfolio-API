@@ -1,8 +1,8 @@
 /*************************************************************************
   Portfolio RESTful API
 *************************************************************************/
-//var express    = require('express');
-//var app        = express();
+var express    = require('express');
+var app        = express();
 //var bodyParser = require('body-parser');
 //var mongoose = require('mongoose');
 // var Profile = require('./app/models/profile');
@@ -68,5 +68,5 @@ var dbPwd = 'yesyes1008';
 
 //app.use('/api', router);
 
-//app.listen(port);
+app.listen(port);
 console.log(port + ' port is running!');
