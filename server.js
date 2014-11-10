@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser());
 
 var port = process.env.PORT || 8080;
-app.set('port', port);
+//app.set('port', port);
 
 var mongoose = require('mongoose');
 var dbUser = 'aaronchuo';
@@ -289,10 +289,6 @@ router.get('/', function(req, res) {
 
 app.use('/', router);
 
-// app.get('/', function(req, res) {
-//   res.send('hello world!');
-// });
-
-app.listen(app.get('port'), function() {
+app.listen(port, function() {
   console.log(port + ' port is running!');
 });
