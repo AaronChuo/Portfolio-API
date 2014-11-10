@@ -15,9 +15,9 @@ var port = process.env.PORT || 8080;
 //app.set('port', port);
 
 var mongoose = require('mongoose');
-var dbUser = '';
-var dbPwd = '';
-mongoose.connect();
+var dbUser = 'aaronchuo';
+var dbPwd = 'Aar0nChu01oo8';
+mongoose.connect('mongodb://' + dbUser + ':' + dbPwd + '@ds053160.mongolab.com:53160/heroku_app31461352');
 
 var router = express.Router();
 var auth = require('basic-auth');
