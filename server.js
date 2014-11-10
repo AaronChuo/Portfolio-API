@@ -85,10 +85,13 @@ router.route('/profile')
   // Get all profile fields
   // GET http://portfolio-aaronchuo.rhcloud.com/api/profile
   .get(function(req, res) {
-    Profile.find(function(err, profiles) {
-      if(err) res.send(err);
-      res.json(profiles);
+    res.json({
+      message: 'here is profile'
     });
+    // Profile.find(function(err, profiles) {
+    //   if(err) res.send(err);
+    //   res.json(profiles);
+    // });
   });
 
 router.route('/profile/:profile_id')
