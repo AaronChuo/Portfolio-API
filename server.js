@@ -21,7 +21,7 @@ var dbUser = 'aaronchuo';
 var dbPwd = 'yesyes1008';
 //mongoose.connect('mongodb://dbUser:dbPwd@ds051640.mongolab.com:51640/heroku_app31347655');
 
-//var router = express.Router();
+var router = express.Router();
 // var dbQuery = {
 
 //   //getter: get all / specific data
@@ -61,18 +61,18 @@ var dbPwd = 'yesyes1008';
 /*************************************************************************
   API Index
 *************************************************************************/
-// router.get('/', function(req, res) {
-//   res.json({
-//     message: 'Hello !'
-//   });
-// });
-
-app.get('/', function(req, res) {
-  res.send('hello world!');
+router.get('/', function(req, res) {
+  res.json({
+    message: 'Hello !'
+  });
 });
+
+app.use('/api', router);
+
+// app.get('/', function(req, res) {
+//   res.send('hello world!');
+// });
 
 app.listen(app.get('port'), function() {
   console.log(port + ' port is running!');
 });
-
-//app.use('/api', router);
