@@ -1,9 +1,19 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var ProfileSchema = Schema({
-  field: String,
-  value: [String],
-  pubDate: {type: Date, default: Date.now},
+  field: {
+  	type: String,
+  	required: true
+  },
+  value: {
+  	type: [String],
+  	required: true
+  },
+  pubDate: {
+  	type: Date,
+  	default: Date.now,
+  	required: true
+  },
   id: Schema.Types.ObjectId
 });
 
