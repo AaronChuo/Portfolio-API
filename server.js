@@ -40,7 +40,9 @@ router.route('/profile')
   // Create a profile field
   // POST http://portfolio-aaronchuo.rhcloud.com/api/profile
   .post(function(req, res) {
-    var profile = new Profile();
+    var profile = new Profile({
+      field: ''
+    });
     //profile.field = req.body.field;
     //profile.value = req.body.value;
     profile.save(function(err, body) {
