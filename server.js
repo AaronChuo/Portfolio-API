@@ -41,8 +41,8 @@ router.route('/profile')
   // POST http://portfolio-aaronchuo.rhcloud.com/api/profile
   .post(function(req, res) {
     var profile = new Profile();
-    profile.field = req.body.field;
-    profile.value = req.body.value;
+    profile.field = req.body.field || undefined;
+    profile.value = req.body.value || undefined;
     profile.save(function(err, body) {
       if(err) res.send(err);
       res.json({
